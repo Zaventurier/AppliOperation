@@ -40,6 +40,14 @@ namespace MonAppliBureau
             this.btnEffacer = new System.Windows.Forms.Button();
             this.btnSoustraire = new System.Windows.Forms.Button();
             this.btnDiviser = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pxDepart = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PourRes = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPour = new System.Windows.Forms.TextBox();
+            this.btnPour = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtValeur1
@@ -154,11 +162,90 @@ namespace MonAppliBureau
             this.btnDiviser.UseVisualStyleBackColor = true;
             this.btnDiviser.Click += new System.EventHandler(this.btnDiviser_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Pourcentage (non fonctionnel):";
+            // 
+            // pxDepart
+            // 
+            this.pxDepart.Location = new System.Drawing.Point(190, 188);
+            this.pxDepart.Name = "pxDepart";
+            this.pxDepart.Size = new System.Drawing.Size(189, 22);
+            this.pxDepart.TabIndex = 12;
+            this.pxDepart.TextChanged += new System.EventHandler(this.pxDepart_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Prix de départ :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(34, 277);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 32);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "=";
+            // 
+            // PourRes
+            // 
+            this.PourRes.Location = new System.Drawing.Point(122, 277);
+            this.PourRes.Name = "PourRes";
+            this.PourRes.Size = new System.Drawing.Size(189, 22);
+            this.PourRes.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Coefficient multiplicateur :";
+            // 
+            // txtPour
+            // 
+            this.txtPour.Location = new System.Drawing.Point(190, 223);
+            this.txtPour.Name = "txtPour";
+            this.txtPour.Size = new System.Drawing.Size(189, 22);
+            this.txtPour.TabIndex = 12;
+            this.txtPour.TextChanged += new System.EventHandler(this.txtPour_TextChanged);
+            // 
+            // btnPour
+            // 
+            this.btnPour.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPour.Location = new System.Drawing.Point(385, 190);
+            this.btnPour.Name = "btnPour";
+            this.btnPour.Size = new System.Drawing.Size(58, 50);
+            this.btnPour.TabIndex = 15;
+            this.btnPour.Text = "%";
+            this.btnPour.UseVisualStyleBackColor = true;
+            this.btnPour.Click += new System.EventHandler(this.btnPour_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(630, 346);
+            this.Controls.Add(this.btnPour);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.PourRes);
+            this.Controls.Add(this.txtPour);
+            this.Controls.Add(this.pxDepart);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDiviser);
             this.Controls.Add(this.btnSoustraire);
             this.Controls.Add(this.btnQuitter);
@@ -171,7 +258,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Calculatrice 1.0";
+            this.Text = "Calculatrice 1.1.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +277,14 @@ namespace MonAppliBureau
         private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Button btnSoustraire;
         private System.Windows.Forms.Button btnDiviser;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox pxDepart;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox PourRes;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtPour;
+        private System.Windows.Forms.Button btnPour;
     }
 }
 

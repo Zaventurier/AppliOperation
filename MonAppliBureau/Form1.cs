@@ -87,5 +87,20 @@ namespace MonAppliBureau
             }
             catch { };
         }
+
+        private void pxDepart_TextChanged(object sender, EventArgs e)
+        {
+            PourRes.Text = "";
+        }
+
+        private void txtPour_TextChanged(object sender, EventArgs e)
+        {
+            PourRes.Text = "";
+        }
+
+        private void btnPour_Click(object sender, EventArgs e)
+        {
+            PourRes.Text = (float.Parse(pxDepart.Text) * float.Parse(txtValeur2.Text)).ToString();
+        }
     }
 }
