@@ -12,6 +12,7 @@ namespace MonAppliBureau
 {
     public partial class Form1 : Form
     {
+        int coeff;
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +24,9 @@ namespace MonAppliBureau
             txtValeur2.Text = "";
             txtResultat.Text = "";
             lblOperation.Text = "";
+            pxDepart.Text = "";
+            txtPour.Text = "";
+            PourRes.Text="";
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -100,7 +104,13 @@ namespace MonAppliBureau
 
         private void btnPour_Click(object sender, EventArgs e)
         {
-            PourRes.Text = (float.Parse(pxDepart.Text) * float.Parse(txtValeur2.Text)).ToString();
+            
+            PourRes.Text = (float.Parse(pxDepart.Text) * float.Parse(txtPour.Text)).ToString();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

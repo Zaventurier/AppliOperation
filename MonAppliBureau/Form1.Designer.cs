@@ -122,7 +122,7 @@ namespace MonAppliBureau
             // 
             this.btnQuitter.BackgroundImage = global::MonAppliBureau.Properties.Resources.annuler;
             this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnQuitter.Location = new System.Drawing.Point(384, 68);
+            this.btnQuitter.Location = new System.Drawing.Point(568, 152);
             this.btnQuitter.Name = "btnQuitter";
             this.btnQuitter.Size = new System.Drawing.Size(54, 50);
             this.btnQuitter.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace MonAppliBureau
             // 
             this.btnEffacer.BackgroundImage = global::MonAppliBureau.Properties.Resources.gomme;
             this.btnEffacer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEffacer.Location = new System.Drawing.Point(384, 12);
+            this.btnEffacer.Location = new System.Drawing.Point(568, 96);
             this.btnEffacer.Name = "btnEffacer";
             this.btnEffacer.Size = new System.Drawing.Size(54, 50);
             this.btnEffacer.TabIndex = 8;
@@ -173,7 +173,7 @@ namespace MonAppliBureau
             // 
             // pxDepart
             // 
-            this.pxDepart.Location = new System.Drawing.Point(190, 188);
+            this.pxDepart.Location = new System.Drawing.Point(246, 188);
             this.pxDepart.Name = "pxDepart";
             this.pxDepart.Size = new System.Drawing.Size(189, 22);
             this.pxDepart.TabIndex = 12;
@@ -210,13 +210,14 @@ namespace MonAppliBureau
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(15, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(169, 17);
+            this.label5.Size = new System.Drawing.Size(225, 17);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Coefficient multiplicateur :";
+            this.label5.Text = "Coefficient multiplicateur (ex 0,25):";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtPour
             // 
-            this.txtPour.Location = new System.Drawing.Point(190, 223);
+            this.txtPour.Location = new System.Drawing.Point(246, 220);
             this.txtPour.Name = "txtPour";
             this.txtPour.Size = new System.Drawing.Size(189, 22);
             this.txtPour.TabIndex = 12;
@@ -225,7 +226,7 @@ namespace MonAppliBureau
             // btnPour
             // 
             this.btnPour.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPour.Location = new System.Drawing.Point(385, 190);
+            this.btnPour.Location = new System.Drawing.Point(441, 188);
             this.btnPour.Name = "btnPour";
             this.btnPour.Size = new System.Drawing.Size(58, 50);
             this.btnPour.TabIndex = 15;
@@ -237,7 +238,7 @@ namespace MonAppliBureau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 346);
+            this.ClientSize = new System.Drawing.Size(688, 364);
             this.Controls.Add(this.btnPour);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -258,7 +259,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Calculatrice 1.1.0";
+            this.Text = "Calculatrice 1.1.1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
