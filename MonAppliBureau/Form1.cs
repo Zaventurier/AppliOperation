@@ -105,7 +105,7 @@ namespace MonAppliBureau
         private void btnPour_Click(object sender, EventArgs e)
         {
             float coeff;
-            coeff = ((int.Parse(pxDepart.Text) * int.Parse(txtPour.Text))/100);
+            coeff = ((Convert.ToSingle(pxDepart.Text) * Convert.ToSingle(txtPour.Text))/100);
             PourRes.Text = Convert.ToString(coeff);
                 // (float.Parse(pxDepart.Text) * float.Parse(txtPour.Text)).ToString();
         }

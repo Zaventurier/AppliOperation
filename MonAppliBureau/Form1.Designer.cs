@@ -167,13 +167,13 @@ namespace MonAppliBureau
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 17);
+            this.label1.Size = new System.Drawing.Size(152, 17);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Pourcentage (/!\\ Quelques bug sont encore observés !):";
+            this.label1.Text = "Montant d\'une remise :";
             // 
             // pxDepart
             // 
-            this.pxDepart.Location = new System.Drawing.Point(246, 188);
+            this.pxDepart.Location = new System.Drawing.Point(201, 185);
             this.pxDepart.Name = "pxDepart";
             this.pxDepart.Size = new System.Drawing.Size(189, 22);
             this.pxDepart.TabIndex = 12;
@@ -192,7 +192,7 @@ namespace MonAppliBureau
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(34, 277);
+            this.label4.Location = new System.Drawing.Point(78, 277);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 32);
             this.label4.TabIndex = 14;
@@ -200,7 +200,7 @@ namespace MonAppliBureau
             // 
             // PourRes
             // 
-            this.PourRes.Location = new System.Drawing.Point(122, 277);
+            this.PourRes.Location = new System.Drawing.Point(201, 277);
             this.PourRes.Name = "PourRes";
             this.PourRes.Size = new System.Drawing.Size(189, 22);
             this.PourRes.TabIndex = 12;
@@ -210,14 +210,14 @@ namespace MonAppliBureau
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(15, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(225, 17);
+            this.label5.Size = new System.Drawing.Size(180, 17);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Coefficient multiplicateur (ex 0,25):";
+            this.label5.Text = "Pourcentage de réduction :";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtPour
             // 
-            this.txtPour.Location = new System.Drawing.Point(246, 220);
+            this.txtPour.Location = new System.Drawing.Point(201, 218);
             this.txtPour.Name = "txtPour";
             this.txtPour.Size = new System.Drawing.Size(189, 22);
             this.txtPour.TabIndex = 12;
@@ -226,7 +226,7 @@ namespace MonAppliBureau
             // btnPour
             // 
             this.btnPour.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPour.Location = new System.Drawing.Point(441, 188);
+            this.btnPour.Location = new System.Drawing.Point(396, 185);
             this.btnPour.Name = "btnPour";
             this.btnPour.Size = new System.Drawing.Size(58, 50);
             this.btnPour.TabIndex = 15;
@@ -259,7 +259,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Calculatrice 1.2.0";
+            this.Text = "Calculatrice 1.2.1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
