@@ -12,7 +12,7 @@ namespace MonAppliBureau
 {
     public partial class Form1 : Form
     {
-        int coeff;
+        
         public Form1()
         {
             InitializeComponent();
@@ -104,8 +104,10 @@ namespace MonAppliBureau
 
         private void btnPour_Click(object sender, EventArgs e)
         {
-            
-            PourRes.Text = (float.Parse(pxDepart.Text) * float.Parse(txtPour.Text)).ToString();
+            float coeff;
+            coeff = ((int.Parse(pxDepart.Text) * int.Parse(txtPour.Text))/100);
+            PourRes.Text = Convert.ToString(coeff);
+                // (float.Parse(pxDepart.Text) * float.Parse(txtPour.Text)).ToString();
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -167,9 +167,9 @@ namespace MonAppliBureau
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 17);
+            this.label1.Size = new System.Drawing.Size(359, 17);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Pourcentage (non fonctionnel):";
+            this.label1.Text = "Pourcentage (/!\\ Quelques bug sont encore observés !):";
             // 
             // pxDepart
             // 
@@ -259,7 +259,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Calculatrice 1.1.1";
+            this.Text = "Calculatrice 1.2.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 
