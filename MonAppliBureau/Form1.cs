@@ -67,5 +67,25 @@ namespace MonAppliBureau
             lblOperation.Text = "";
             txtResultat.Text = "";
         }
+
+        private void btnSoustraire_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtResultat.Text = (float.Parse(txtValeur1.Text) - float.Parse(txtValeur2.Text)).ToString();
+                lblOperation.Text = "-";
+            }
+            catch { };
+        }
+
+        private void btnDiviser_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtResultat.Text = (float.Parse(txtValeur1.Text) / float.Parse(txtValeur2.Text)).ToString();
+                lblOperation.Text = "x";
+            }
+            catch { };
+        }
     }
 }

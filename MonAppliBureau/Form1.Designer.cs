@@ -38,6 +38,8 @@ namespace MonAppliBureau
             this.btnMultiplier = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
             this.btnEffacer = new System.Windows.Forms.Button();
+            this.btnSoustraire = new System.Windows.Forms.Button();
+            this.btnDiviser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtValeur1
@@ -112,7 +114,7 @@ namespace MonAppliBureau
             // 
             this.btnQuitter.BackgroundImage = global::MonAppliBureau.Properties.Resources.annuler;
             this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnQuitter.Location = new System.Drawing.Point(303, 68);
+            this.btnQuitter.Location = new System.Drawing.Point(384, 68);
             this.btnQuitter.Name = "btnQuitter";
             this.btnQuitter.Size = new System.Drawing.Size(54, 50);
             this.btnQuitter.TabIndex = 9;
@@ -123,18 +125,42 @@ namespace MonAppliBureau
             // 
             this.btnEffacer.BackgroundImage = global::MonAppliBureau.Properties.Resources.gomme;
             this.btnEffacer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEffacer.Location = new System.Drawing.Point(303, 12);
+            this.btnEffacer.Location = new System.Drawing.Point(384, 12);
             this.btnEffacer.Name = "btnEffacer";
             this.btnEffacer.Size = new System.Drawing.Size(54, 50);
             this.btnEffacer.TabIndex = 8;
             this.btnEffacer.UseVisualStyleBackColor = true;
             this.btnEffacer.Click += new System.EventHandler(this.btnEffacer_Click);
             // 
+            // btnSoustraire
+            // 
+            this.btnSoustraire.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSoustraire.Location = new System.Drawing.Point(305, 12);
+            this.btnSoustraire.Name = "btnSoustraire";
+            this.btnSoustraire.Size = new System.Drawing.Size(58, 50);
+            this.btnSoustraire.TabIndex = 10;
+            this.btnSoustraire.Text = "-";
+            this.btnSoustraire.UseVisualStyleBackColor = true;
+            this.btnSoustraire.Click += new System.EventHandler(this.btnSoustraire_Click);
+            // 
+            // btnDiviser
+            // 
+            this.btnDiviser.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiviser.Location = new System.Drawing.Point(305, 68);
+            this.btnDiviser.Name = "btnDiviser";
+            this.btnDiviser.Size = new System.Drawing.Size(58, 50);
+            this.btnDiviser.TabIndex = 10;
+            this.btnDiviser.Text = "/";
+            this.btnDiviser.UseVisualStyleBackColor = true;
+            this.btnDiviser.Click += new System.EventHandler(this.btnDiviser_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 166);
+            this.ClientSize = new System.Drawing.Size(461, 173);
+            this.Controls.Add(this.btnDiviser);
+            this.Controls.Add(this.btnSoustraire);
             this.Controls.Add(this.btnQuitter);
             this.Controls.Add(this.btnEffacer);
             this.Controls.Add(this.btnMultiplier);
@@ -145,7 +171,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Opération";
+            this.Text = "Calculatrice";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +188,8 @@ namespace MonAppliBureau
         private System.Windows.Forms.Button btnMultiplier;
         private System.Windows.Forms.Button btnEffacer;
         private System.Windows.Forms.Button btnQuitter;
+        private System.Windows.Forms.Button btnSoustraire;
+        private System.Windows.Forms.Button btnDiviser;
     }
 }
 
