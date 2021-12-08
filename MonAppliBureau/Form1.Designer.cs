@@ -56,7 +56,6 @@ namespace MonAppliBureau
             this.txtValeur1.Name = "txtValeur1";
             this.txtValeur1.Size = new System.Drawing.Size(165, 22);
             this.txtValeur1.TabIndex = 1;
-            this.txtValeur1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValeur1.TextChanged += new System.EventHandler(this.txtvaleur1_TextChanged);
             // 
             // txtValeur2
@@ -65,7 +64,6 @@ namespace MonAppliBureau
             this.txtValeur2.Name = "txtValeur2";
             this.txtValeur2.Size = new System.Drawing.Size(165, 22);
             this.txtValeur2.TabIndex = 2;
-            this.txtValeur2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValeur2.TextChanged += new System.EventHandler(this.txtvaleur2_TextChanged);
             // 
             // btnAjouter
@@ -105,7 +103,6 @@ namespace MonAppliBureau
             this.txtResultat.Name = "txtResultat";
             this.txtResultat.Size = new System.Drawing.Size(165, 22);
             this.txtResultat.TabIndex = 6;
-            this.txtResultat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnMultiplier
             // 
@@ -259,7 +256,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Calculatrice 1.2.1";
+            this.Text = "Calculatrice 1.2.2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
