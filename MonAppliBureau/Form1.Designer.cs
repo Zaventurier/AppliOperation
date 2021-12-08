@@ -158,7 +158,7 @@ namespace MonAppliBureau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 173);
+            this.ClientSize = new System.Drawing.Size(630, 346);
             this.Controls.Add(this.btnDiviser);
             this.Controls.Add(this.btnSoustraire);
             this.Controls.Add(this.btnQuitter);
@@ -171,7 +171,7 @@ namespace MonAppliBureau
             this.Controls.Add(this.txtValeur2);
             this.Controls.Add(this.txtValeur1);
             this.Name = "Form1";
-            this.Text = "Calculatrice";
+            this.Text = "Calculatrice 1.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 
